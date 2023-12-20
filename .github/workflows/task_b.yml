@@ -1,0 +1,10 @@
+name: Task B
+
+on:
+  workflow_call:
+
+jobs:
+  task_b:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello World!

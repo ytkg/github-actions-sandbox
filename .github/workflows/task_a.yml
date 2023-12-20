@@ -1,0 +1,13 @@
+name: Task A
+
+on:
+  push:
+
+jobs:
+  task_a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello World!
+  task_b:
+    needs: task_a
+    uses: ./.github/workflows/task_b.yml
